@@ -1,0 +1,4408 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "MidiBluetoothPlugin",
+    "printedName": "MidiBluetoothPlugin",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "CoreAudioKit",
+        "printedName": "CoreAudioKit",
+        "declKind": "Import",
+        "moduleName": "MidiBluetoothPlugin"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMIDI",
+        "printedName": "CoreMIDI",
+        "declKind": "Import",
+        "moduleName": "MidiBluetoothPlugin"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "MidiBluetoothPlugin"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MidiBluetoothManager",
+        "printedName": "MidiBluetoothManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isBluetoothPoweredOn",
+            "printedName": "isBluetoothPoweredOn",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC02isB9PoweredOnSbvp",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC02isB9PoweredOnSbvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "isOpen": true,
+            "declAttributes": [
+              "ProjectedValueProperty",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin0aB7ManagerC02isB9PoweredOnSbvg",
+                "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC02isB9PoweredOnSbvg",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin0aB7ManagerC02isB9PoweredOnSbvs",
+                "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC02isB9PoweredOnSbvs",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "isOpen": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin0aB7ManagerC02isB9PoweredOnSbvM",
+                "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC02isB9PoweredOnSbvM",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "isOpen": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$isBluetoothPoweredOn",
+            "printedName": "$isBluetoothPoweredOn",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC03$isB9PoweredOn7Combine9PublishedV9PublisherVySb_Gvp",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC03$isB9PoweredOn7Combine9PublishedV9PublisherVySb_Gvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "implicit": true,
+            "isOpen": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin0aB7ManagerC03$isB9PoweredOn7Combine9PublishedV9PublisherVySb_Gvg",
+                "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC03$isB9PoweredOn7Combine9PublishedV9PublisherVySb_Gvg",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin0aB7ManagerC03$isB9PoweredOn7Combine9PublishedV9PublisherVySb_Gvs",
+                "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC03$isB9PoweredOn7Combine9PublishedV9PublisherVySb_Gvs",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "isOpen": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin0aB7ManagerC03$isB9PoweredOn7Combine9PublishedV9PublisherVySb_GvM",
+                "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC03$isB9PoweredOn7Combine9PublishedV9PublisherVySb_GvM",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "isOpen": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_isBluetoothPoweredOn",
+            "printedName": "_isBluetoothPoweredOn",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Published",
+                "printedName": "Combine.Published<Swift.Bool>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:7Combine9PublishedV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC03_isB9PoweredOn33_A16188FE2BE9E2298A391D3A036808C7LL7Combine9PublishedVySbGvp",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC03_isB9PoweredOn33_A16188FE2BE9E2298A391D3A036808C7LL7Combine9PublishedVySbGvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "implicit": true,
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "midiClient",
+            "printedName": "midiClient",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt32",
+                "printedName": "Swift.UInt32",
+                "usr": "s:s6UInt32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC10midiClient33_A16188FE2BE9E2298A391D3A036808C7LLs6UInt32Vvp",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC10midiClient33_A16188FE2BE9E2298A391D3A036808C7LLs6UInt32Vvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 1,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "midiOutPort",
+            "printedName": "midiOutPort",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt32",
+                "printedName": "Swift.UInt32",
+                "usr": "s:s6UInt32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC11midiOutPort33_A16188FE2BE9E2298A391D3A036808C7LLs6UInt32Vvp",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC11midiOutPort33_A16188FE2BE9E2298A391D3A036808C7LLs6UInt32Vvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 2,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "midiInPort",
+            "printedName": "midiInPort",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt32",
+                "printedName": "Swift.UInt32",
+                "usr": "s:s6UInt32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC10midiInPort33_A16188FE2BE9E2298A391D3A036808C7LLs6UInt32Vvp",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC10midiInPort33_A16188FE2BE9E2298A391D3A036808C7LLs6UInt32Vvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 3,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "centralManager",
+            "printedName": "centralManager",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "CoreBluetooth.CBCentralManager?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CBCentralManager",
+                    "printedName": "CoreBluetooth.CBCentralManager",
+                    "usr": "c:objc(cs)CBCentralManager"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC07centralD033_A16188FE2BE9E2298A391D3A036808C7LLSo09CBCentralD0CSgvp",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC07centralD033_A16188FE2BE9E2298A391D3A036808C7LLSo09CBCentralD0CSgvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 4,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "centralViewController",
+            "printedName": "centralViewController",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "CoreAudioKit.CABTMIDICentralViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CABTMIDICentralViewController",
+                    "printedName": "CoreAudioKit.CABTMIDICentralViewController",
+                    "usr": "c:objc(cs)CABTMIDICentralViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC21centralViewController33_A16188FE2BE9E2298A391D3A036808C7LLSo015CABTMIDICentralfG0CSgvp",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC21centralViewController33_A16188FE2BE9E2298A391D3A036808C7LLSo015CABTMIDICentralfG0CSgvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 5,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "deviceUniqueIds",
+            "printedName": "deviceUniqueIds",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Int32]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC15deviceUniqueIds33_A16188FE2BE9E2298A391D3A036808C7LLSays5Int32VGvp",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC15deviceUniqueIds33_A16188FE2BE9E2298A391D3A036808C7LLSays5Int32VGvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 6,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "deviceInfoList",
+            "printedName": "deviceInfoList",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[MidiBluetoothPlugin.DeviceInfo]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceInfo",
+                    "printedName": "MidiBluetoothPlugin.DeviceInfo",
+                    "usr": "s:19MidiBluetoothPlugin10DeviceInfoV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC14deviceInfoList33_A16188FE2BE9E2298A391D3A036808C7LLSayAA06DeviceF0VGvp",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC14deviceInfoList33_A16188FE2BE9E2298A391D3A036808C7LLSayAA06DeviceF0VGvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 7,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "discovrSources",
+            "printedName": "discovrSources",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[MidiBluetoothPlugin.MIDIDeviceInfo]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MIDIDeviceInfo",
+                    "printedName": "MidiBluetoothPlugin.MIDIDeviceInfo",
+                    "usr": "s:19MidiBluetoothPlugin14MIDIDeviceInfoV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC14discovrSources33_A16188FE2BE9E2298A391D3A036808C7LLSayAA14MIDIDeviceInfoVGvp",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC14discovrSources33_A16188FE2BE9E2298A391D3A036808C7LLSayAA14MIDIDeviceInfoVGvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 8,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "discovrDestinations",
+            "printedName": "discovrDestinations",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[MidiBluetoothPlugin.MIDIDeviceInfo]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MIDIDeviceInfo",
+                    "printedName": "MidiBluetoothPlugin.MIDIDeviceInfo",
+                    "usr": "s:19MidiBluetoothPlugin14MIDIDeviceInfoV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC19discovrDestinations33_A16188FE2BE9E2298A391D3A036808C7LLSayAA14MIDIDeviceInfoVGvp",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC19discovrDestinations33_A16188FE2BE9E2298A391D3A036808C7LLSayAA14MIDIDeviceInfoVGvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 9,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "connectedSources",
+            "printedName": "connectedSources",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.UInt32]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt32",
+                    "printedName": "Swift.UInt32",
+                    "usr": "s:s6UInt32V"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC16connectedSources33_A16188FE2BE9E2298A391D3A036808C7LLSays6UInt32VGvp",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC16connectedSources33_A16188FE2BE9E2298A391D3A036808C7LLSays6UInt32VGvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 10,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "connectedDestinations",
+            "printedName": "connectedDestinations",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.UInt32]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt32",
+                    "printedName": "Swift.UInt32",
+                    "usr": "s:s6UInt32V"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC21connectedDestinations33_A16188FE2BE9E2298A391D3A036808C7LLSays6UInt32VGvp",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC21connectedDestinations33_A16188FE2BE9E2298A391D3A036808C7LLSays6UInt32VGvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 11,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "callbackTickResult",
+            "printedName": "callbackTickResult",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[(Swift.UnsafePointer<Swift.Int8>) -> ()]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[(Swift.UnsafePointer<Swift.Int8>) -> ()]",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.UnsafePointer<Swift.Int8>) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UnsafePointer",
+                            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int8",
+                                "printedName": "Swift.Int8",
+                                "usr": "s:s4Int8V"
+                              }
+                            ],
+                            "usr": "s:SP"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC18callbackTickResult33_A16188FE2BE9E2298A391D3A036808C7LLSayySPys4Int8VGXCGSgvp",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC18callbackTickResult33_A16188FE2BE9E2298A391D3A036808C7LLSayySPys4Int8VGXCGSgvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 12,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "callbackConnected",
+            "printedName": "callbackConnected",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[(Swift.UnsafePointer<Swift.Int8>) -> ()]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[(Swift.UnsafePointer<Swift.Int8>) -> ()]",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.UnsafePointer<Swift.Int8>) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UnsafePointer",
+                            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int8",
+                                "printedName": "Swift.Int8",
+                                "usr": "s:s4Int8V"
+                              }
+                            ],
+                            "usr": "s:SP"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC17callbackConnected33_A16188FE2BE9E2298A391D3A036808C7LLSayySPys4Int8VGXCGSgvp",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC17callbackConnected33_A16188FE2BE9E2298A391D3A036808C7LLSayySPys4Int8VGXCGSgvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 13,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "callbackDisconnected",
+            "printedName": "callbackDisconnected",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[(Swift.UnsafePointer<Swift.Int8>) -> ()]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[(Swift.UnsafePointer<Swift.Int8>) -> ()]",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.UnsafePointer<Swift.Int8>) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UnsafePointer",
+                            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int8",
+                                "printedName": "Swift.Int8",
+                                "usr": "s:s4Int8V"
+                              }
+                            ],
+                            "usr": "s:SP"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC20callbackDisconnected33_A16188FE2BE9E2298A391D3A036808C7LLSayySPys4Int8VGXCGSgvp",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC20callbackDisconnected33_A16188FE2BE9E2298A391D3A036808C7LLSayySPys4Int8VGXCGSgvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 14,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "callbackNoteEvent",
+            "printedName": "callbackNoteEvent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[(Swift.UnsafePointer<Swift.UInt8>, Swift.UInt32) -> ()]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[(Swift.UnsafePointer<Swift.UInt8>, Swift.UInt32) -> ()]",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.UnsafePointer<Swift.UInt8>, Swift.UInt32) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(Swift.UnsafePointer<Swift.UInt8>, Swift.UInt32)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "UnsafePointer",
+                                "printedName": "Swift.UnsafePointer<Swift.UInt8>",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "UInt8",
+                                    "printedName": "Swift.UInt8",
+                                    "usr": "s:s5UInt8V"
+                                  }
+                                ],
+                                "usr": "s:SP"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "UInt32",
+                                "printedName": "Swift.UInt32",
+                                "usr": "s:s6UInt32V"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC17callbackNoteEvent33_A16188FE2BE9E2298A391D3A036808C7LLSayySPys5UInt8VG_s6UInt32VtXCGSgvp",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC17callbackNoteEvent33_A16188FE2BE9E2298A391D3A036808C7LLSayySPys5UInt8VG_s6UInt32VtXCGSgvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 15,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "callbackDeviceStatusChanged",
+            "printedName": "callbackDeviceStatusChanged",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[() -> ()]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[() -> ()]",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC27callbackDeviceStatusChanged33_A16188FE2BE9E2298A391D3A036808C7LLSayyyXCGSgvp",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC27callbackDeviceStatusChanged33_A16188FE2BE9E2298A391D3A036808C7LLSayyyXCGSgvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 16,
+            "hasStorage": true
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MidiBluetoothManager",
+                "printedName": "MidiBluetoothPlugin.MidiBluetoothManager",
+                "usr": "c:@M@MidiBluetoothPlugin@objc(cs)MidiBluetoothManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MidiBluetoothPlugin@objc(cs)MidiBluetoothManager(im)init",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerCACycfc",
+            "moduleName": "MidiBluetoothPlugin",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "centralManagerDidUpdateState",
+            "printedName": "centralManagerDidUpdateState(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBCentralManager",
+                "printedName": "CoreBluetooth.CBCentralManager",
+                "usr": "c:objc(cs)CBCentralManager"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MidiBluetoothPlugin@objc(cs)MidiBluetoothManager(im)centralManagerDidUpdateState:",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC07centralD14DidUpdateStateyySo09CBCentralD0CF",
+            "moduleName": "MidiBluetoothPlugin",
+            "isOpen": true,
+            "objc_name": "centralManagerDidUpdateState:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disconnectAllMidiBluetoothDevice",
+            "printedName": "disconnectAllMidiBluetoothDevice()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC013disconnectAllaB6DeviceyyF",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC013disconnectAllaB6DeviceyyF",
+            "moduleName": "MidiBluetoothPlugin",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showBluetoothMIDIDevices",
+            "printedName": "showBluetoothMIDIDevices()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC04showB11MIDIDevicesyyF",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC04showB11MIDIDevicesyyF",
+            "moduleName": "MidiBluetoothPlugin",
+            "isOpen": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendMIDIMessage",
+            "printedName": "sendMIDIMessage(data:id:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.UInt8]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int32?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC15sendMIDIMessage4data2idySays5UInt8VG_s5Int32VSgtF",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC15sendMIDIMessage4data2idySays5UInt8VG_s5Int32VSgtF",
+            "moduleName": "MidiBluetoothPlugin",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "subscribeConnected",
+            "printedName": "subscribeConnected(callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.UnsafePointer<Swift.Int8>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnsafePointer",
+                    "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int8",
+                        "printedName": "Swift.Int8",
+                        "usr": "s:s4Int8V"
+                      }
+                    ],
+                    "usr": "s:SP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC18subscribeConnected8callbackyySPys4Int8VGXC_tF",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC18subscribeConnected8callbackyySPys4Int8VGXC_tF",
+            "moduleName": "MidiBluetoothPlugin",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "subscribeDisconnected",
+            "printedName": "subscribeDisconnected(callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.UnsafePointer<Swift.Int8>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnsafePointer",
+                    "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int8",
+                        "printedName": "Swift.Int8",
+                        "usr": "s:s4Int8V"
+                      }
+                    ],
+                    "usr": "s:SP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC21subscribeDisconnected8callbackyySPys4Int8VGXC_tF",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC21subscribeDisconnected8callbackyySPys4Int8VGXC_tF",
+            "moduleName": "MidiBluetoothPlugin",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "subscribeTickResult",
+            "printedName": "subscribeTickResult(callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.UnsafePointer<Swift.Int8>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnsafePointer",
+                    "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int8",
+                        "printedName": "Swift.Int8",
+                        "usr": "s:s4Int8V"
+                      }
+                    ],
+                    "usr": "s:SP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC19subscribeTickResult8callbackyySPys4Int8VGXC_tF",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC19subscribeTickResult8callbackyySPys4Int8VGXC_tF",
+            "moduleName": "MidiBluetoothPlugin",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "subscribeMidiReceived",
+            "printedName": "subscribeMidiReceived(callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.UnsafePointer<Swift.UInt8>, Swift.UInt32) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.UnsafePointer<Swift.UInt8>, Swift.UInt32)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnsafePointer",
+                        "printedName": "Swift.UnsafePointer<Swift.UInt8>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UInt8",
+                            "printedName": "Swift.UInt8",
+                            "usr": "s:s5UInt8V"
+                          }
+                        ],
+                        "usr": "s:SP"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UInt32",
+                        "printedName": "Swift.UInt32",
+                        "usr": "s:s6UInt32V"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC09subscribeA8Received8callbackyySPys5UInt8VG_s6UInt32VtXC_tF",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC09subscribeA8Received8callbackyySPys5UInt8VG_s6UInt32VtXC_tF",
+            "moduleName": "MidiBluetoothPlugin",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "subscribeDeviceStatusChangeReceived",
+            "printedName": "subscribeDeviceStatusChangeReceived(callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC35subscribeDeviceStatusChangeReceived8callbackyyyXC_tF",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC35subscribeDeviceStatusChangeReceived8callbackyyyXC_tF",
+            "moduleName": "MidiBluetoothPlugin",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "goToBluetoothSetting",
+            "printedName": "goToBluetoothSetting()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC04goToB7SettingyyF",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC04goToB7SettingyyF",
+            "moduleName": "MidiBluetoothPlugin",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getSourceDevices",
+            "printedName": "getSourceDevices()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[MidiBluetoothPlugin.MIDIDeviceInfo]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MIDIDeviceInfo",
+                    "printedName": "MidiBluetoothPlugin.MIDIDeviceInfo",
+                    "usr": "s:19MidiBluetoothPlugin14MIDIDeviceInfoV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC16getSourceDevicesSayAA14MIDIDeviceInfoVGyF",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC16getSourceDevicesSayAA14MIDIDeviceInfoVGyF",
+            "moduleName": "MidiBluetoothPlugin",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDestinationDevices",
+            "printedName": "getDestinationDevices()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[MidiBluetoothPlugin.MIDIDeviceInfo]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MIDIDeviceInfo",
+                    "printedName": "MidiBluetoothPlugin.MIDIDeviceInfo",
+                    "usr": "s:19MidiBluetoothPlugin14MIDIDeviceInfoV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC21getDestinationDevicesSayAA14MIDIDeviceInfoVGyF",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC21getDestinationDevicesSayAA14MIDIDeviceInfoVGyF",
+            "moduleName": "MidiBluetoothPlugin",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDeviceInfo",
+            "printedName": "getDeviceInfo()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[MidiBluetoothPlugin.DeviceInfo]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceInfo",
+                    "printedName": "MidiBluetoothPlugin.DeviceInfo",
+                    "usr": "s:19MidiBluetoothPlugin10DeviceInfoV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC13getDeviceInfoSayAA0fG0VGyF",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC13getDeviceInfoSayAA0fG0VGyF",
+            "moduleName": "MidiBluetoothPlugin",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connectToSource",
+            "printedName": "connectToSource(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC15connectToSourceyys5Int32VF",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC15connectToSourceyys5Int32VF",
+            "moduleName": "MidiBluetoothPlugin",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disconnectSource",
+            "printedName": "disconnectSource(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC16disconnectSourceyys5Int32VF",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC16disconnectSourceyys5Int32VF",
+            "moduleName": "MidiBluetoothPlugin",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connectToDestination",
+            "printedName": "connectToDestination(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC20connectToDestinationyys5Int32VF",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC20connectToDestinationyys5Int32VF",
+            "moduleName": "MidiBluetoothPlugin",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disconnectDestination",
+            "printedName": "disconnectDestination(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC21disconnectDestinationyys5Int32VF",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC21disconnectDestinationyys5Int32VF",
+            "moduleName": "MidiBluetoothPlugin",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deviceStageChangeHandler",
+            "printedName": "deviceStageChangeHandler(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceConnectivityStage",
+                "printedName": "MidiBluetoothPlugin.DeviceConnectivityStage",
+                "usr": "s:19MidiBluetoothPlugin23DeviceConnectivityStageO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19MidiBluetoothPlugin0aB7ManagerC24deviceStageChangeHandleryyAA018DeviceConnectivityF0OF",
+            "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC24deviceStageChangeHandleryyAA018DeviceConnectivityF0OF",
+            "moduleName": "MidiBluetoothPlugin",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MidiBluetoothPlugin@objc(cs)MidiBluetoothManager",
+        "mangledName": "$s19MidiBluetoothPlugin0aB7ManagerC",
+        "moduleName": "MidiBluetoothPlugin",
+        "isOpen": true,
+        "declAttributes": [
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Var",
+        "name": "midiBluetoothManager",
+        "printedName": "midiBluetoothManager",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "MidiBluetoothManager",
+            "printedName": "MidiBluetoothPlugin.MidiBluetoothManager",
+            "usr": "c:@M@MidiBluetoothPlugin@objc(cs)MidiBluetoothManager"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:19MidiBluetoothPlugin04midiB7ManagerAA0abE0Cvp",
+        "mangledName": "$s19MidiBluetoothPlugin04midiB7ManagerAA0abE0Cvp",
+        "moduleName": "MidiBluetoothPlugin",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage"
+        ],
+        "isLet": true,
+        "hasStorage": true
+      },
+      {
+        "kind": "Function",
+        "name": "showBluetoothMIDIDevices",
+        "printedName": "showBluetoothMIDIDevices()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)showBluetoothMIDIDevices",
+        "mangledName": "$s19MidiBluetoothPlugin04showB11MIDIDevicesyyF",
+        "moduleName": "MidiBluetoothPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "disconnectAllMidiBluetoothDevice",
+        "printedName": "disconnectAllMidiBluetoothDevice()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)disconnectAllMidiBluetoothDevice",
+        "mangledName": "$s19MidiBluetoothPlugin013disconnectAllaB6DeviceyyF",
+        "moduleName": "MidiBluetoothPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "isEnableBluetooth",
+        "printedName": "isEnableBluetooth()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)isEnableBluetooth",
+        "mangledName": "$s19MidiBluetoothPlugin08isEnableB0SbyF",
+        "moduleName": "MidiBluetoothPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "goToBluetoothSetting",
+        "printedName": "goToBluetoothSetting()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)goToBluetoothSetting",
+        "mangledName": "$s19MidiBluetoothPlugin04goToB7SettingyyF",
+        "moduleName": "MidiBluetoothPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "connectToDevice",
+        "printedName": "connectToDevice(macAddress:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "UnsafePointer",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int8",
+                "printedName": "Swift.Int8",
+                "usr": "s:s4Int8V"
+              }
+            ],
+            "usr": "s:SP"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)connectToDeviceWithMacAddress:",
+        "mangledName": "$s19MidiBluetoothPlugin15connectToDevice10macAddressySPys4Int8VG_tF",
+        "moduleName": "MidiBluetoothPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "disconnectFromDevice",
+        "printedName": "disconnectFromDevice(macAddress:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "UnsafePointer",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int8",
+                "printedName": "Swift.Int8",
+                "usr": "s:s4Int8V"
+              }
+            ],
+            "usr": "s:SP"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)disconnectFromDeviceWithMacAddress:",
+        "mangledName": "$s19MidiBluetoothPlugin20disconnectFromDevice10macAddressySPys4Int8VG_tF",
+        "moduleName": "MidiBluetoothPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "onConneced",
+        "printedName": "onConneced(callback:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeFunc",
+            "name": "Function",
+            "printedName": "(Swift.UnsafePointer<Swift.Int8>) -> ()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ]
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)onConnecedWithCallback:",
+        "mangledName": "$s19MidiBluetoothPlugin10onConneced8callbackyySPys4Int8VGXC_tF",
+        "moduleName": "MidiBluetoothPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "onDisconnected",
+        "printedName": "onDisconnected(callback:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeFunc",
+            "name": "Function",
+            "printedName": "(Swift.UnsafePointer<Swift.Int8>) -> ()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ]
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)onDisconnectedWithCallback:",
+        "mangledName": "$s19MidiBluetoothPlugin14onDisconnected8callbackyySPys4Int8VGXC_tF",
+        "moduleName": "MidiBluetoothPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "onTickMidiBluetoothResult",
+        "printedName": "onTickMidiBluetoothResult(callback:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeFunc",
+            "name": "Function",
+            "printedName": "(Swift.UnsafePointer<Swift.Int8>) -> ()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ]
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)onTickMidiBluetoothResultWithCallback:",
+        "mangledName": "$s19MidiBluetoothPlugin06onTickaB6Result8callbackyySPys4Int8VGXC_tF",
+        "moduleName": "MidiBluetoothPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "onMidiReceived",
+        "printedName": "onMidiReceived(callback:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeFunc",
+            "name": "Function",
+            "printedName": "(Swift.UnsafePointer<Swift.UInt8>, Swift.UInt32) -> ()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(Swift.UnsafePointer<Swift.UInt8>, Swift.UInt32)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnsafePointer",
+                    "printedName": "Swift.UnsafePointer<Swift.UInt8>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UInt8",
+                        "printedName": "Swift.UInt8",
+                        "usr": "s:s5UInt8V"
+                      }
+                    ],
+                    "usr": "s:SP"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt32",
+                    "printedName": "Swift.UInt32",
+                    "usr": "s:s6UInt32V"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)onMidiReceivedWithCallback:",
+        "mangledName": "$s19MidiBluetoothPlugin02onA8Received8callbackyySPys5UInt8VG_s6UInt32VtXC_tF",
+        "moduleName": "MidiBluetoothPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "onDeviceStatusChangeReceived",
+        "printedName": "onDeviceStatusChangeReceived(callback:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeFunc",
+            "name": "Function",
+            "printedName": "() -> ()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ]
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)onDeviceStatusChangeReceivedWithCallback:",
+        "mangledName": "$s19MidiBluetoothPlugin28onDeviceStatusChangeReceived8callbackyyyXC_tF",
+        "moduleName": "MidiBluetoothPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "getMidiDevices",
+        "printedName": "getMidiDevices()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "UnsafePointer",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int8",
+                "printedName": "Swift.Int8",
+                "usr": "s:s4Int8V"
+              }
+            ],
+            "usr": "s:SP"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)getMidiDevices",
+        "mangledName": "$s19MidiBluetoothPlugin03getA7DevicesSPys4Int8VGyF",
+        "moduleName": "MidiBluetoothPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "sendMIDIMessage",
+        "printedName": "sendMIDIMessage(jsonData:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "UnsafePointer",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int8",
+                "printedName": "Swift.Int8",
+                "usr": "s:s4Int8V"
+              }
+            ],
+            "usr": "s:SP"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)sendMIDIMessageWithJsonData:",
+        "mangledName": "$s19MidiBluetoothPlugin15sendMIDIMessage8jsonDataySPys4Int8VG_tF",
+        "moduleName": "MidiBluetoothPlugin",
+        "declAttributes": [
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "freePointer",
+        "printedName": "freePointer(pointer:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "UnsafePointer",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int8",
+                "printedName": "Swift.Int8",
+                "usr": "s:s4Int8V"
+              }
+            ],
+            "usr": "s:SP"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)freePointerWithPointer:",
+        "mangledName": "$s19MidiBluetoothPlugin11freePointer7pointerySPys4Int8VG_tF",
+        "moduleName": "MidiBluetoothPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "printLog",
+        "printedName": "printLog(log:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "UnsafePointer",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int8",
+                "printedName": "Swift.Int8",
+                "usr": "s:s4Int8V"
+              }
+            ],
+            "usr": "s:SP"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)printLogWithLog:",
+        "mangledName": "$s19MidiBluetoothPlugin8printLog3logySPys4Int8VG_tF",
+        "moduleName": "MidiBluetoothPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMIDI",
+        "printedName": "CoreMIDI",
+        "declKind": "Import",
+        "moduleName": "MidiBluetoothPlugin"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MIDIDeviceInfo",
+        "printedName": "MIDIDeviceInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "uniqueId",
+            "printedName": "uniqueId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int32?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin14MIDIDeviceInfoV8uniqueIds5Int32VSgvp",
+            "mangledName": "$s19MidiBluetoothPlugin14MIDIDeviceInfoV8uniqueIds5Int32VSgvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int32?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int32",
+                        "printedName": "Swift.Int32",
+                        "usr": "s:s5Int32V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin14MIDIDeviceInfoV8uniqueIds5Int32VSgvg",
+                "mangledName": "$s19MidiBluetoothPlugin14MIDIDeviceInfoV8uniqueIds5Int32VSgvg",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int32?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int32",
+                        "printedName": "Swift.Int32",
+                        "usr": "s:s5Int32V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin14MIDIDeviceInfoV8uniqueIds5Int32VSgvs",
+                "mangledName": "$s19MidiBluetoothPlugin14MIDIDeviceInfoV8uniqueIds5Int32VSgvs",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin14MIDIDeviceInfoV8uniqueIds5Int32VSgvM",
+                "mangledName": "$s19MidiBluetoothPlugin14MIDIDeviceInfoV8uniqueIds5Int32VSgvM",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "deviceName",
+            "printedName": "deviceName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin14MIDIDeviceInfoV10deviceNameSSvp",
+            "mangledName": "$s19MidiBluetoothPlugin14MIDIDeviceInfoV10deviceNameSSvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin14MIDIDeviceInfoV10deviceNameSSvg",
+                "mangledName": "$s19MidiBluetoothPlugin14MIDIDeviceInfoV10deviceNameSSvg",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin14MIDIDeviceInfoV10deviceNameSSvs",
+                "mangledName": "$s19MidiBluetoothPlugin14MIDIDeviceInfoV10deviceNameSSvs",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin14MIDIDeviceInfoV10deviceNameSSvM",
+                "mangledName": "$s19MidiBluetoothPlugin14MIDIDeviceInfoV10deviceNameSSvM",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isConnected",
+            "printedName": "isConnected",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin14MIDIDeviceInfoV11isConnectedSbvp",
+            "mangledName": "$s19MidiBluetoothPlugin14MIDIDeviceInfoV11isConnectedSbvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 2,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin14MIDIDeviceInfoV11isConnectedSbvg",
+                "mangledName": "$s19MidiBluetoothPlugin14MIDIDeviceInfoV11isConnectedSbvg",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin14MIDIDeviceInfoV11isConnectedSbvs",
+                "mangledName": "$s19MidiBluetoothPlugin14MIDIDeviceInfoV11isConnectedSbvs",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin14MIDIDeviceInfoV11isConnectedSbvM",
+                "mangledName": "$s19MidiBluetoothPlugin14MIDIDeviceInfoV11isConnectedSbvM",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "connectionType",
+            "printedName": "connectionType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceConnectivityType",
+                "printedName": "MidiBluetoothPlugin.DeviceConnectivityType",
+                "usr": "s:19MidiBluetoothPlugin22DeviceConnectivityTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin14MIDIDeviceInfoV14connectionTypeAA018DeviceConnectivityG0Ovp",
+            "mangledName": "$s19MidiBluetoothPlugin14MIDIDeviceInfoV14connectionTypeAA018DeviceConnectivityG0Ovp",
+            "moduleName": "MidiBluetoothPlugin",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 3,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceConnectivityType",
+                    "printedName": "MidiBluetoothPlugin.DeviceConnectivityType",
+                    "usr": "s:19MidiBluetoothPlugin22DeviceConnectivityTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin14MIDIDeviceInfoV14connectionTypeAA018DeviceConnectivityG0Ovg",
+                "mangledName": "$s19MidiBluetoothPlugin14MIDIDeviceInfoV14connectionTypeAA018DeviceConnectivityG0Ovg",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceConnectivityType",
+                    "printedName": "MidiBluetoothPlugin.DeviceConnectivityType",
+                    "usr": "s:19MidiBluetoothPlugin22DeviceConnectivityTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin14MIDIDeviceInfoV14connectionTypeAA018DeviceConnectivityG0Ovs",
+                "mangledName": "$s19MidiBluetoothPlugin14MIDIDeviceInfoV14connectionTypeAA018DeviceConnectivityG0Ovs",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin14MIDIDeviceInfoV14connectionTypeAA018DeviceConnectivityG0OvM",
+                "mangledName": "$s19MidiBluetoothPlugin14MIDIDeviceInfoV14connectionTypeAA018DeviceConnectivityG0OvM",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(uniqueId:deviceName:isConnected:connectionType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MIDIDeviceInfo",
+                "printedName": "MidiBluetoothPlugin.MIDIDeviceInfo",
+                "usr": "s:19MidiBluetoothPlugin14MIDIDeviceInfoV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int32?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceConnectivityType",
+                "printedName": "MidiBluetoothPlugin.DeviceConnectivityType",
+                "usr": "s:19MidiBluetoothPlugin22DeviceConnectivityTypeO"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19MidiBluetoothPlugin14MIDIDeviceInfoV8uniqueId10deviceName11isConnected14connectionTypeACs5Int32VSg_SSSbAA018DeviceConnectivityM0Otcfc",
+            "mangledName": "$s19MidiBluetoothPlugin14MIDIDeviceInfoV8uniqueId10deviceName11isConnected14connectionTypeACs5Int32VSg_SSSbAA018DeviceConnectivityM0Otcfc",
+            "moduleName": "MidiBluetoothPlugin",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19MidiBluetoothPlugin14MIDIDeviceInfoV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s19MidiBluetoothPlugin14MIDIDeviceInfoV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MidiBluetoothPlugin",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:19MidiBluetoothPlugin14MIDIDeviceInfoV",
+        "mangledName": "$s19MidiBluetoothPlugin14MIDIDeviceInfoV",
+        "moduleName": "MidiBluetoothPlugin",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DeviceInfo",
+        "printedName": "DeviceInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "macAddress",
+            "printedName": "macAddress",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin10DeviceInfoV10macAddressSSvp",
+            "mangledName": "$s19MidiBluetoothPlugin10DeviceInfoV10macAddressSSvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin10DeviceInfoV10macAddressSSvg",
+                "mangledName": "$s19MidiBluetoothPlugin10DeviceInfoV10macAddressSSvg",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin10DeviceInfoV10macAddressSSvs",
+                "mangledName": "$s19MidiBluetoothPlugin10DeviceInfoV10macAddressSSvs",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin10DeviceInfoV10macAddressSSvM",
+                "mangledName": "$s19MidiBluetoothPlugin10DeviceInfoV10macAddressSSvM",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "deviceName",
+            "printedName": "deviceName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin10DeviceInfoV10deviceNameSSvp",
+            "mangledName": "$s19MidiBluetoothPlugin10DeviceInfoV10deviceNameSSvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin10DeviceInfoV10deviceNameSSvg",
+                "mangledName": "$s19MidiBluetoothPlugin10DeviceInfoV10deviceNameSSvg",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin10DeviceInfoV10deviceNameSSvs",
+                "mangledName": "$s19MidiBluetoothPlugin10DeviceInfoV10deviceNameSSvs",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin10DeviceInfoV10deviceNameSSvM",
+                "mangledName": "$s19MidiBluetoothPlugin10DeviceInfoV10deviceNameSSvM",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isConnected",
+            "printedName": "isConnected",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin10DeviceInfoV11isConnectedSbvp",
+            "mangledName": "$s19MidiBluetoothPlugin10DeviceInfoV11isConnectedSbvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 2,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin10DeviceInfoV11isConnectedSbvg",
+                "mangledName": "$s19MidiBluetoothPlugin10DeviceInfoV11isConnectedSbvg",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin10DeviceInfoV11isConnectedSbvs",
+                "mangledName": "$s19MidiBluetoothPlugin10DeviceInfoV11isConnectedSbvs",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin10DeviceInfoV11isConnectedSbvM",
+                "mangledName": "$s19MidiBluetoothPlugin10DeviceInfoV11isConnectedSbvM",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "connectionType",
+            "printedName": "connectionType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin10DeviceInfoV14connectionTypeSSvp",
+            "mangledName": "$s19MidiBluetoothPlugin10DeviceInfoV14connectionTypeSSvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 3,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin10DeviceInfoV14connectionTypeSSvg",
+                "mangledName": "$s19MidiBluetoothPlugin10DeviceInfoV14connectionTypeSSvg",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin10DeviceInfoV14connectionTypeSSvs",
+                "mangledName": "$s19MidiBluetoothPlugin10DeviceInfoV14connectionTypeSSvs",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin10DeviceInfoV14connectionTypeSSvM",
+                "mangledName": "$s19MidiBluetoothPlugin10DeviceInfoV14connectionTypeSSvM",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sourceId",
+            "printedName": "sourceId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int32?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin10DeviceInfoV8sourceIds5Int32VSgvp",
+            "mangledName": "$s19MidiBluetoothPlugin10DeviceInfoV8sourceIds5Int32VSgvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 4,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int32?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int32",
+                        "printedName": "Swift.Int32",
+                        "usr": "s:s5Int32V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin10DeviceInfoV8sourceIds5Int32VSgvg",
+                "mangledName": "$s19MidiBluetoothPlugin10DeviceInfoV8sourceIds5Int32VSgvg",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int32?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int32",
+                        "printedName": "Swift.Int32",
+                        "usr": "s:s5Int32V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin10DeviceInfoV8sourceIds5Int32VSgvs",
+                "mangledName": "$s19MidiBluetoothPlugin10DeviceInfoV8sourceIds5Int32VSgvs",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin10DeviceInfoV8sourceIds5Int32VSgvM",
+                "mangledName": "$s19MidiBluetoothPlugin10DeviceInfoV8sourceIds5Int32VSgvM",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "destinationId",
+            "printedName": "destinationId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int32?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin10DeviceInfoV13destinationIds5Int32VSgvp",
+            "mangledName": "$s19MidiBluetoothPlugin10DeviceInfoV13destinationIds5Int32VSgvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 5,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int32?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int32",
+                        "printedName": "Swift.Int32",
+                        "usr": "s:s5Int32V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin10DeviceInfoV13destinationIds5Int32VSgvg",
+                "mangledName": "$s19MidiBluetoothPlugin10DeviceInfoV13destinationIds5Int32VSgvg",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int32?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int32",
+                        "printedName": "Swift.Int32",
+                        "usr": "s:s5Int32V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin10DeviceInfoV13destinationIds5Int32VSgvs",
+                "mangledName": "$s19MidiBluetoothPlugin10DeviceInfoV13destinationIds5Int32VSgvs",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin10DeviceInfoV13destinationIds5Int32VSgvM",
+                "mangledName": "$s19MidiBluetoothPlugin10DeviceInfoV13destinationIds5Int32VSgvM",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(macAddress:deviceName:isConnected:connectionType:sourceId:destinationId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceInfo",
+                "printedName": "MidiBluetoothPlugin.DeviceInfo",
+                "usr": "s:19MidiBluetoothPlugin10DeviceInfoV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int32?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int32?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19MidiBluetoothPlugin10DeviceInfoV10macAddress10deviceName11isConnected14connectionType8sourceId011destinationO0ACSS_SSSbSSs5Int32VSgALtcfc",
+            "mangledName": "$s19MidiBluetoothPlugin10DeviceInfoV10macAddress10deviceName11isConnected14connectionType8sourceId011destinationO0ACSS_SSSbSSs5Int32VSgALtcfc",
+            "moduleName": "MidiBluetoothPlugin",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19MidiBluetoothPlugin10DeviceInfoV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s19MidiBluetoothPlugin10DeviceInfoV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MidiBluetoothPlugin",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:19MidiBluetoothPlugin10DeviceInfoV",
+        "mangledName": "$s19MidiBluetoothPlugin10DeviceInfoV",
+        "moduleName": "MidiBluetoothPlugin",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DeviceConnectivityType",
+        "printedName": "DeviceConnectivityType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MidiBluetoothPlugin.DeviceConnectivityType.Type) -> MidiBluetoothPlugin.DeviceConnectivityType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceConnectivityType",
+                    "printedName": "MidiBluetoothPlugin.DeviceConnectivityType",
+                    "usr": "s:19MidiBluetoothPlugin22DeviceConnectivityTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MidiBluetoothPlugin.DeviceConnectivityType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DeviceConnectivityType",
+                        "printedName": "MidiBluetoothPlugin.DeviceConnectivityType",
+                        "usr": "s:19MidiBluetoothPlugin22DeviceConnectivityTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:19MidiBluetoothPlugin22DeviceConnectivityTypeO7unknownyA2CmF",
+            "mangledName": "$s19MidiBluetoothPlugin22DeviceConnectivityTypeO7unknownyA2CmF",
+            "moduleName": "MidiBluetoothPlugin"
+          },
+          {
+            "kind": "Var",
+            "name": "bluetoothConnection",
+            "printedName": "bluetoothConnection",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MidiBluetoothPlugin.DeviceConnectivityType.Type) -> MidiBluetoothPlugin.DeviceConnectivityType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceConnectivityType",
+                    "printedName": "MidiBluetoothPlugin.DeviceConnectivityType",
+                    "usr": "s:19MidiBluetoothPlugin22DeviceConnectivityTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MidiBluetoothPlugin.DeviceConnectivityType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DeviceConnectivityType",
+                        "printedName": "MidiBluetoothPlugin.DeviceConnectivityType",
+                        "usr": "s:19MidiBluetoothPlugin22DeviceConnectivityTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:19MidiBluetoothPlugin22DeviceConnectivityTypeO19bluetoothConnectionyA2CmF",
+            "mangledName": "$s19MidiBluetoothPlugin22DeviceConnectivityTypeO19bluetoothConnectionyA2CmF",
+            "moduleName": "MidiBluetoothPlugin"
+          },
+          {
+            "kind": "Var",
+            "name": "usbConnection",
+            "printedName": "usbConnection",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MidiBluetoothPlugin.DeviceConnectivityType.Type) -> MidiBluetoothPlugin.DeviceConnectivityType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceConnectivityType",
+                    "printedName": "MidiBluetoothPlugin.DeviceConnectivityType",
+                    "usr": "s:19MidiBluetoothPlugin22DeviceConnectivityTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MidiBluetoothPlugin.DeviceConnectivityType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DeviceConnectivityType",
+                        "printedName": "MidiBluetoothPlugin.DeviceConnectivityType",
+                        "usr": "s:19MidiBluetoothPlugin22DeviceConnectivityTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:19MidiBluetoothPlugin22DeviceConnectivityTypeO13usbConnectionyA2CmF",
+            "mangledName": "$s19MidiBluetoothPlugin22DeviceConnectivityTypeO13usbConnectionyA2CmF",
+            "moduleName": "MidiBluetoothPlugin"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MidiBluetoothPlugin.DeviceConnectivityType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceConnectivityType",
+                    "printedName": "MidiBluetoothPlugin.DeviceConnectivityType",
+                    "usr": "s:19MidiBluetoothPlugin22DeviceConnectivityTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19MidiBluetoothPlugin22DeviceConnectivityTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s19MidiBluetoothPlugin22DeviceConnectivityTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "MidiBluetoothPlugin",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin22DeviceConnectivityTypeO8rawValueSSvp",
+            "mangledName": "$s19MidiBluetoothPlugin22DeviceConnectivityTypeO8rawValueSSvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin22DeviceConnectivityTypeO8rawValueSSvg",
+                "mangledName": "$s19MidiBluetoothPlugin22DeviceConnectivityTypeO8rawValueSSvg",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:19MidiBluetoothPlugin22DeviceConnectivityTypeO",
+        "mangledName": "$s19MidiBluetoothPlugin22DeviceConnectivityTypeO",
+        "moduleName": "MidiBluetoothPlugin",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DeviceConnectivityStage",
+        "printedName": "DeviceConnectivityStage",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "deviceConnect",
+            "printedName": "deviceConnect",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MidiBluetoothPlugin.DeviceConnectivityStage.Type) -> MidiBluetoothPlugin.DeviceConnectivityStage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceConnectivityStage",
+                    "printedName": "MidiBluetoothPlugin.DeviceConnectivityStage",
+                    "usr": "s:19MidiBluetoothPlugin23DeviceConnectivityStageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MidiBluetoothPlugin.DeviceConnectivityStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DeviceConnectivityStage",
+                        "printedName": "MidiBluetoothPlugin.DeviceConnectivityStage",
+                        "usr": "s:19MidiBluetoothPlugin23DeviceConnectivityStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:19MidiBluetoothPlugin23DeviceConnectivityStageO13deviceConnectyA2CmF",
+            "mangledName": "$s19MidiBluetoothPlugin23DeviceConnectivityStageO13deviceConnectyA2CmF",
+            "moduleName": "MidiBluetoothPlugin"
+          },
+          {
+            "kind": "Var",
+            "name": "deviceDisconnect",
+            "printedName": "deviceDisconnect",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MidiBluetoothPlugin.DeviceConnectivityStage.Type) -> MidiBluetoothPlugin.DeviceConnectivityStage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceConnectivityStage",
+                    "printedName": "MidiBluetoothPlugin.DeviceConnectivityStage",
+                    "usr": "s:19MidiBluetoothPlugin23DeviceConnectivityStageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MidiBluetoothPlugin.DeviceConnectivityStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DeviceConnectivityStage",
+                        "printedName": "MidiBluetoothPlugin.DeviceConnectivityStage",
+                        "usr": "s:19MidiBluetoothPlugin23DeviceConnectivityStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:19MidiBluetoothPlugin23DeviceConnectivityStageO16deviceDisconnectyA2CmF",
+            "mangledName": "$s19MidiBluetoothPlugin23DeviceConnectivityStageO16deviceDisconnectyA2CmF",
+            "moduleName": "MidiBluetoothPlugin"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MidiBluetoothPlugin.DeviceConnectivityStage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceConnectivityStage",
+                    "printedName": "MidiBluetoothPlugin.DeviceConnectivityStage",
+                    "usr": "s:19MidiBluetoothPlugin23DeviceConnectivityStageO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19MidiBluetoothPlugin23DeviceConnectivityStageO8rawValueACSgs5Int32V_tcfc",
+            "mangledName": "$s19MidiBluetoothPlugin23DeviceConnectivityStageO8rawValueACSgs5Int32V_tcfc",
+            "moduleName": "MidiBluetoothPlugin",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19MidiBluetoothPlugin23DeviceConnectivityStageO8rawValues5Int32Vvp",
+            "mangledName": "$s19MidiBluetoothPlugin23DeviceConnectivityStageO8rawValues5Int32Vvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19MidiBluetoothPlugin23DeviceConnectivityStageO8rawValues5Int32Vvg",
+                "mangledName": "$s19MidiBluetoothPlugin23DeviceConnectivityStageO8rawValues5Int32Vvg",
+                "moduleName": "MidiBluetoothPlugin",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:19MidiBluetoothPlugin23DeviceConnectivityStageO",
+        "mangledName": "$s19MidiBluetoothPlugin23DeviceConnectivityStageO",
+        "moduleName": "MidiBluetoothPlugin",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "Int32",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIApplication",
+        "printedName": "UIApplication",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "keyWindow",
+            "printedName": "keyWindow",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIWindow?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIWindow",
+                    "printedName": "UIKit.UIWindow",
+                    "usr": "c:objc(cs)UIWindow"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So13UIApplicationC19MidiBluetoothPluginE9keyWindowSo8UIWindowCSgvp",
+            "mangledName": "$sSo13UIApplicationC19MidiBluetoothPluginE9keyWindowSo8UIWindowCSgvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIWindow?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIWindow",
+                        "printedName": "UIKit.UIWindow",
+                        "usr": "c:objc(cs)UIWindow"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So13UIApplicationC19MidiBluetoothPluginE9keyWindowSo8UIWindowCSgvg",
+                "mangledName": "$sSo13UIApplicationC19MidiBluetoothPluginE9keyWindowSo8UIWindowCSgvg",
+                "moduleName": "MidiBluetoothPlugin",
+                "isOpen": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "keyWindowPresentedController",
+            "printedName": "keyWindowPresentedController",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So13UIApplicationC19MidiBluetoothPluginE28keyWindowPresentedControllerSo06UIViewH0CSgvp",
+            "mangledName": "$sSo13UIApplicationC19MidiBluetoothPluginE28keyWindowPresentedControllerSo06UIViewH0CSgvp",
+            "moduleName": "MidiBluetoothPlugin",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIViewController?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIViewController",
+                        "printedName": "UIKit.UIViewController",
+                        "usr": "c:objc(cs)UIViewController"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So13UIApplicationC19MidiBluetoothPluginE28keyWindowPresentedControllerSo06UIViewH0CSgvg",
+                "mangledName": "$sSo13UIApplicationC19MidiBluetoothPluginE28keyWindowPresentedControllerSo06UIViewH0CSgvg",
+                "moduleName": "MidiBluetoothPlugin",
+                "isOpen": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIApplication",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIApplication",
+        "declAttributes": [
+          "Preconcurrency",
+          "Available",
+          "ObjC",
+          "NonSendable",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UIResponder",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CABTMIDICentralViewController",
+        "printedName": "CABTMIDICentralViewController",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "viewDidDisappear",
+            "printedName": "viewDidDisappear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MidiBluetoothPlugin@@objc(cs)CABTMIDICentralViewController(im)viewDidDisappear:",
+            "mangledName": "$sSo29CABTMIDICentralViewControllerC19MidiBluetoothPluginE16viewDidDisappearyySbF",
+            "moduleName": "MidiBluetoothPlugin",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "viewDidDisappear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)CABTMIDICentralViewController",
+        "moduleName": "CoreAudioKit",
+        "isOpen": true,
+        "intro_iOS": "8.0",
+        "objc_name": "CABTMIDICentralViewController",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "Available",
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UITableViewController",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UITableViewController",
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/kajornpoptoboonchuay\/Documents\/GitHub\/IceLabsXNotero\/MidiBluetoothPlugin\/MidiBluetoothManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1727,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kajornpoptoboonchuay\/Documents\/GitHub\/IceLabsXNotero\/MidiBluetoothPlugin\/MidiBluetoothManager.swift",
+      "kind": "Array",
+      "offset": 2050,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kajornpoptoboonchuay\/Documents\/GitHub\/IceLabsXNotero\/MidiBluetoothPlugin\/MidiBluetoothManager.swift",
+      "kind": "Array",
+      "offset": 2100,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kajornpoptoboonchuay\/Documents\/GitHub\/IceLabsXNotero\/MidiBluetoothPlugin\/MidiBluetoothManager.swift",
+      "kind": "Array",
+      "offset": 2154,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kajornpoptoboonchuay\/Documents\/GitHub\/IceLabsXNotero\/MidiBluetoothPlugin\/MidiBluetoothManager.swift",
+      "kind": "Array",
+      "offset": 2213,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kajornpoptoboonchuay\/Documents\/GitHub\/IceLabsXNotero\/MidiBluetoothPlugin\/MidiBluetoothManager.swift",
+      "kind": "Array",
+      "offset": 2270,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kajornpoptoboonchuay\/Documents\/GitHub\/IceLabsXNotero\/MidiBluetoothPlugin\/MidiBluetoothManager.swift",
+      "kind": "Array",
+      "offset": 2332,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kajornpoptoboonchuay\/Documents\/GitHub\/IceLabsXNotero\/MidiBluetoothPlugin\/MidiBluetoothManager.swift",
+      "kind": "Array",
+      "offset": 2429,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kajornpoptoboonchuay\/Documents\/GitHub\/IceLabsXNotero\/MidiBluetoothPlugin\/MidiBluetoothManager.swift",
+      "kind": "Array",
+      "offset": 2520,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kajornpoptoboonchuay\/Documents\/GitHub\/IceLabsXNotero\/MidiBluetoothPlugin\/MidiBluetoothManager.swift",
+      "kind": "Array",
+      "offset": 2614,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kajornpoptoboonchuay\/Documents\/GitHub\/IceLabsXNotero\/MidiBluetoothPlugin\/MidiBluetoothManager.swift",
+      "kind": "Array",
+      "offset": 2713,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kajornpoptoboonchuay\/Documents\/GitHub\/IceLabsXNotero\/MidiBluetoothPlugin\/MidiBluetoothManager.swift",
+      "kind": "Array",
+      "offset": 2794,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kajornpoptoboonchuay\/Documents\/GitHub\/IceLabsXNotero\/MidiBluetoothPlugin\/MidiBluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 24497,
+      "length": 25,
+      "value": "\"Failed to decode Base64\""
+    },
+    {
+      "filePath": "\/Users\/kajornpoptoboonchuay\/Documents\/GitHub\/IceLabsXNotero\/MidiBluetoothPlugin\/MidiBluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 24586,
+      "length": 31,
+      "value": "\"Error decoding JSON: \""
+    },
+    {
+      "filePath": "\/Users\/kajornpoptoboonchuay\/Documents\/GitHub\/IceLabsXNotero\/MidiBluetoothPlugin\/MidiBluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 24616,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kajornpoptoboonchuay\/Documents\/GitHub\/IceLabsXNotero\/MidiBluetoothPlugin\/MidiBluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 24670,
+      "length": 20,
+      "value": "\"Error parsing JSON\""
+    },
+    {
+      "filePath": "\/Users\/kajornpoptoboonchuay\/Documents\/GitHub\/IceLabsXNotero\/MidiBluetoothPlugin\/Models\/MIDIDeviceInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 484,
+      "length": 8,
+      "value": "\"UNKNOW\""
+    },
+    {
+      "filePath": "\/Users\/kajornpoptoboonchuay\/Documents\/GitHub\/IceLabsXNotero\/MidiBluetoothPlugin\/Models\/MIDIDeviceInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 529,
+      "length": 11,
+      "value": "\"BLUETOOTH\""
+    },
+    {
+      "filePath": "\/Users\/kajornpoptoboonchuay\/Documents\/GitHub\/IceLabsXNotero\/MidiBluetoothPlugin\/Models\/MIDIDeviceInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 567,
+      "length": 5,
+      "value": "\"USB\""
+    },
+    {
+      "filePath": "\/Users\/kajornpoptoboonchuay\/Documents\/GitHub\/IceLabsXNotero\/MidiBluetoothPlugin\/Models\/MIDIDeviceInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 668,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/kajornpoptoboonchuay\/Documents\/GitHub\/IceLabsXNotero\/MidiBluetoothPlugin\/Models\/MIDIDeviceInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 699,
+      "length": 1,
+      "value": "2"
+    }
+  ]
+}

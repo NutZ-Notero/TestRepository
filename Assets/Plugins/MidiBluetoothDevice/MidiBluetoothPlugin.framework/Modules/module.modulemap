@@ -1,0 +1,6 @@
+framework module MidiBluetoothPlugin {
+  umbrella header "MidiBluetoothPlugin.h"
+  export *
+
+  module * { export * }
+}

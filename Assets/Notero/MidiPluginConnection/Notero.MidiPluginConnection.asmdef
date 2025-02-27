@@ -1,0 +1,16 @@
+{
+    "name": "Notero.MidiPluginConnection",
+    "rootNamespace": "",
+    "references": [
+        "GUID:3870f39588b12004e99996f0da486b37"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

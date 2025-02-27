@@ -1,0 +1,10 @@
+Packages\NoteroMidiPlugin\Runtime\MidiBluetoothPlugin.cs(713,37): warning CS0067: The event 'MidiBluetoothPluginNativeBridge.OnDeviceConnected' is never used
+Packages\NoteroMidiPlugin\Runtime\MidiBluetoothPlugin.cs(717,29): warning CS0067: The event 'MidiBluetoothPluginNativeBridge.OnScanCompleted' is never used
+Packages\NoteroMidiPlugin\Runtime\MidiBluetoothPlugin.cs(711,35): warning CS0067: The event 'MidiBluetoothPluginNativeBridge.OnBluetoothStatusResult' is never used
+Packages\NoteroMidiPlugin\Runtime\MidiBluetoothPlugin.cs(716,29): warning CS0067: The event 'MidiBluetoothPluginNativeBridge.OnTickMidiBluetoothDeviceResult' is never used
+Packages\NoteroMidiPlugin\Runtime\MidiBluetoothPlugin.cs(712,29): warning CS0067: The event 'MidiBluetoothPluginNativeBridge.OnBluetoothPermissionResult' is never used
+Packages\NoteroMidiPlugin\Runtime\MidiBluetoothPlugin.cs(720,37): warning CS0067: The event 'MidiBluetoothPluginNativeBridge.MidiBytesEvent' is never used
+Packages\NoteroMidiPlugin\Runtime\MidiBluetoothPlugin.cs(715,29): warning CS0067: The event 'MidiBluetoothPluginNativeBridge.OnDeviceStatusChange' is never used
+Packages\NoteroMidiPlugin\Runtime\MidiBluetoothPlugin.cs(714,37): warning CS0067: The event 'MidiBluetoothPluginNativeBridge.OnDeviceDisconnected' is never used
+Packages\NoteroMidiPlugin\Runtime\MidiBluetoothPlugin.cs(718,39): warning CS0067: The event 'MidiBluetoothPluginNativeBridge.NoteOnEvent' is never used
+Packages\NoteroMidiPlugin\Runtime\MidiBluetoothPlugin.cs(719,39): warning CS0067: The event 'MidiBluetoothPluginNativeBridge.NoteOffEvent' is never used

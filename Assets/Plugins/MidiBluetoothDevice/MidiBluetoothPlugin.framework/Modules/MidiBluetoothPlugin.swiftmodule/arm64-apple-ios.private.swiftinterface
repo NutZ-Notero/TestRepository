@@ -1,0 +1,67 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature OpaqueTypeErasure -enable-bare-slash-regex -module-name MidiBluetoothPlugin
+import CoreAudioKit
+import CoreBluetooth
+import CoreMIDI
+@_exported import MidiBluetoothPlugin
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension CoreAudioKit.CABTMIDICentralViewController {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidDisappear(_ animated: Swift.Bool)
+}
+@_cdecl("showBluetoothMIDIDevices")
+public func showBluetoothMIDIDevices()
+@_cdecl("disconnectAllMidiBluetoothDevice")
+public func disconnectAllMidiBluetoothDevice()
+@_cdecl("isEnableBluetooth")
+public func isEnableBluetooth() -> Swift.Bool
+@_cdecl("goToBluetoothSetting")
+public func goToBluetoothSetting()
+@_cdecl("connectToDevice")
+public func connectToDevice(macAddress: Swift.UnsafePointer<Swift.CChar>)
+@_cdecl("disconnectFromDevice")
+public func disconnectFromDevice(macAddress: Swift.UnsafePointer<Swift.CChar>)
+@_cdecl("onConneced")
+public func onConneced(callback: @convention(c) (Swift.UnsafePointer<Swift.CChar>) -> Swift.Void)
+@_cdecl("onDisconnected")
+public func onDisconnected(callback: @convention(c) (Swift.UnsafePointer<Swift.CChar>) -> Swift.Void)
+@_cdecl("onTickMidiBluetoothResult")
+public func onTickMidiBluetoothResult(callback: @convention(c) (Swift.UnsafePointer<Swift.CChar>) -> Swift.Void)
+@_cdecl("onMidiReceived")
+public func onMidiReceived(callback: @convention(c) (Swift.UnsafePointer<Swift.UInt8>, Swift.UInt32) -> Swift.Void)
+@_cdecl("onDeviceStatusChangeReceived")
+public func onDeviceStatusChangeReceived(callback: @convention(c) () -> Swift.Void)
+@_cdecl("getMidiDevices")
+public func getMidiDevices() -> Swift.UnsafePointer<Swift.CChar>
+@_cdecl("freePointer")
+public func freePointer(pointer: Swift.UnsafePointer<Swift.CChar>)
+@_cdecl("printLog")
+public func printLog(log: Swift.UnsafePointer<Swift.CChar>)
+public enum DeviceConnectivityType : Swift.String, @unchecked Swift.Sendable, Swift.Encodable {
+  case unknown
+  case bluetoothConnection
+  case usbConnection
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum DeviceConnectivityStage : Swift.Int32, @unchecked Swift.Sendable {
+  case deviceConnect
+  case deviceDisconnect
+  public init?(rawValue: Swift.Int32)
+  public typealias RawValue = Swift.Int32
+  public var rawValue: Swift.Int32 {
+    get
+  }
+}
+extension MidiBluetoothPlugin.DeviceConnectivityType : Swift.Equatable {}
+extension MidiBluetoothPlugin.DeviceConnectivityType : Swift.Hashable {}
+extension MidiBluetoothPlugin.DeviceConnectivityType : Swift.RawRepresentable {}
+extension MidiBluetoothPlugin.DeviceConnectivityStage : Swift.Equatable {}
+extension MidiBluetoothPlugin.DeviceConnectivityStage : Swift.Hashable {}
+extension MidiBluetoothPlugin.DeviceConnectivityStage : Swift.RawRepresentable {}

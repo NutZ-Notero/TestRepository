@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notero.MidiPlugin", "Notero.MidiPlugin.csproj", "{68A3E748-50AD-142A-1710-1CF1F0B27F33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notero.MidiPluginConnection", "Notero.MidiPluginConnection.csproj", "{0E9FD843-898E-F962-AD98-BCCC54AF536D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{1BDE41BB-16C0-A62A-DBE3-D43FA11739C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68A3E748-50AD-142A-1710-1CF1F0B27F33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68A3E748-50AD-142A-1710-1CF1F0B27F33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68A3E748-50AD-142A-1710-1CF1F0B27F33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68A3E748-50AD-142A-1710-1CF1F0B27F33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E9FD843-898E-F962-AD98-BCCC54AF536D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E9FD843-898E-F962-AD98-BCCC54AF536D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E9FD843-898E-F962-AD98-BCCC54AF536D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E9FD843-898E-F962-AD98-BCCC54AF536D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BDE41BB-16C0-A62A-DBE3-D43FA11739C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BDE41BB-16C0-A62A-DBE3-D43FA11739C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BDE41BB-16C0-A62A-DBE3-D43FA11739C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BDE41BB-16C0-A62A-DBE3-D43FA11739C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
